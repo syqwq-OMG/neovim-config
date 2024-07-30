@@ -27,6 +27,13 @@ require("lazy").setup({
     --- statusline -> lualine
     { import = "plugins.lualine" },
 
+    --- manage tab line -> bufferlien
+    { import = "plugins.bufferline" },
+
+    --- fuzzy finder -> telescope
+    { import = "plugins.telescope" },
+
+    
   },
 })
     

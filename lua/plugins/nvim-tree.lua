@@ -1,4 +1,33 @@
 -- local my_list_keys = require('configs.keybindings').nvimTreeList
+local function my_on_attach(bufnr)
+    local api = require "nvim-tree.api"
+    local map = vim.keymap
+
+    local function opts(desc)
+        return { desc = "nvim-tree: " .. desc, buffer = bufnr, noremap = true, silent = true, nowait = true }
+    end
+
+    -- default mappings
+    api.config.mappings.default_on_attach(bufnr)
+
+    -- custom mappings
+    map.set('n', 'o', api.node.open.edit, opts('Open'))
+    map.set('n', '<CR>', api.node.open.edit, opts('Open'))
+    map.set('n', '<2-LeftMouse>', api.node.open.edit, opts('Open'))
+
+    map.set('n', 'v', api.node.open.vertical, opts('Open: Vertical Split'))
+    map.set('n', 'h', api.node.open.horizontal, opts('Open: Horizontal Split'))
+
+    map.set('n', 'R', api.tree.reload, opts('Refresh'))
+    map.set('n', 'a', api.fs.create, opts('Create'))
+    map.set('n', 'd', api.fs.remove, opts('Delete'))
+    map.set('n', 'r', api.fs.rename, opts('Rename'))
+    map.set('n', 'c', api.fs.copy.node, opts( 'Copy'))
+    map.set('n', 'x', api.fs.cut, opts( 'Cut'))
+    map.set('n', 'p', api.fs.paste, opts( 'Paste'))
+    map.set('n', 's', api.node.run.system, opts('Run System'))
+end
+
 
 local options = {
     disable_netrw = true,
@@ -7,6 +36,8 @@ local options = {
     hijack_unnamed_buffer_when_opening = false,
     sync_root_with_cwd = true,
 
+    --- key mapping config
+    on_attach = my_on_attach,
     -- 不显示 git 状态图标
     git = {
         enable = true,
