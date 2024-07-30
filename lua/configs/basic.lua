@@ -54,7 +54,7 @@ vim.o.hlsearch = true
 -- 边输入边搜索
 vim.o.incsearch = true
 
--- 命令行高为2，提供足够的显示空间
+-- 命令行高为1，提供足够的显示空间
 vim.o.cmdheight = 1
 
 -- 当文件被外部程序修改时，自动加载
@@ -97,7 +97,7 @@ vim.o.termguicolors = true
 vim.opt.termguicolors = true
 
 -- 不可见字符的显示，这里只把空格显示为一个点
-vim.o.list = false
+vim.o.list = true
 vim.o.listchars = "space:·"
 
 -- 补全增强

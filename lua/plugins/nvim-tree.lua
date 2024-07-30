@@ -1,4 +1,3 @@
--- local my_list_keys = require('configs.keybindings').nvimTreeList
 local function my_on_attach(bufnr)
     local api = require "nvim-tree.api"
     local map = vim.keymap
@@ -38,6 +37,7 @@ local options = {
 
     --- key mapping config
     on_attach = my_on_attach,
+
     -- 不显示 git 状态图标
     git = {
         enable = true,
@@ -56,16 +56,11 @@ local options = {
     },
     view = {
         -- 宽度
-        width = 40,
+        width = 30,
         -- 也可以 'right'
         side = 'left',
         -- 隐藏根目录
         -- hide_root_folder = false,
-        -- 自定义列表中快捷键
-        -- mappings = {
-        --     custom_only = false,
-        --     list = my_list_keys,
-        -- },
         -- 不显示行数
         number = false,
         relativenumber = false,
