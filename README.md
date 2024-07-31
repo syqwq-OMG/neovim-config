@@ -15,12 +15,19 @@ nvim
     └── plugins
         ├── autopairs.lua
         ├── bufferline.lua
-        ├── cmp.lua
         ├── color-schemes.lua
         ├── dashboard.lua
         ├── lsp
+        │   ├── cmp.lua
+        │   ├── * common-config.lua
         │   ├── lspconfig.lua
-        │   └── mason.lua
+        │   ├── mason.lua
+        │   └── spec-lsp
+        │       ├── cpp.lua
+        │       ├── lua.lua
+        │       ├── markdown.lua
+        │       ├── python.lua
+        │       └── rust.lua
         ├── lualine.lua
         ├── * nvim-tree.lua
         ├── nvim-treesitter.lua
@@ -41,7 +48,10 @@ qwq just the raw neovim, so everything is config from nothing AwA
 - [telescope](https://github.com/nvim-telescope/telescope.nvim)
 - [dashboard](https://github.com/nvimdev/dashboard-nvim)
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
-
+- [mason](https://github.com/williamboman/mason.nvim)
+- [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
+- [nvim-autopairs](https://github.com/windwp/nvim-autopairs)
+- [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
 
 ## References
 - https://youtu.be/-kCUks3xrCM?si=djZL-_eEbfa8UTlo
@@ -49,4 +59,5 @@ qwq just the raw neovim, so everything is config from nothing AwA
 - https://blog.csdn.net/qq_35485875/article/details/120168944
 - https://github.com/williamboman/mason-lspconfig.nvim
 - https://github.com/NvChad/NvChad
+- https://github.com/nshen/InsisVim
 - 
