@@ -19,6 +19,42 @@ local telescope_keybindings = {
     },
 }
 
+
+--[[
+telescope project keybindings
+
+## Default mappings (normal mode):
+
+| Key | Description                                                   |
+| --- | ------------------------------------------------------------- |
+| `d` | delete currently selected project                             |
+| `r` | rename currently selected project                             |
+| `c` | create a project\*                                            |
+| `s` | search inside files within your project                       |
+| `b` | browse inside files within your project                       |
+| `w` | change to the selected project's directory without opening it |
+| `R` | find a recently opened file within your project               |
+| `f` | find a file within your project (same as \<CR\>)              |
+| `o` | change current cd scope                                       |
+
+## Default mappings (insert mode):
+
+| Key     | Description                                                   |
+| ------- | ------------------------------------------------------------- |
+| `<c-d>` | delete currently selected project                             |
+| `<c-v>` | rename currently selected project                             |
+| `<c-a>` | create a project\*                                            |
+| `<c-s>` | search inside files within your project                       |
+| `<c-b>` | browse inside files within your project                       |
+| `<c-l>` | change to the selected project's directory without opening it |
+| `<c-r>` | find a recently opened file within your project               |
+| `<c-f>` | find a file within your project (same as \<CR\>)              |
+| `<c-o>` | change current cd scope                                       |
+
+\* _defaults to your git root if used inside a git project, otherwise, it will use your current working directory_
+
+--]]
+
 local opts = {
     defaults = {
         pickers = {
@@ -88,10 +124,10 @@ local opts = {
             case_mode = "smart_case",        -- or "ignore_case" or "respect_case"
                                              -- the default case_mode is "smart_case"
         },
-        file_browser = {
+       file_browser = {
             -- theme = "ivy",
             -- disables netrw and use telescope-file-browser in its place
-            hijack_netrw = true,
+           hijack_netrw = true,
             -- mappings = {
             --   ["i"] = {
             --     -- your custom insert mode mappings
@@ -100,7 +136,7 @@ local opts = {
             --     -- your custom normal mode mappings
             --   },
             -- },
-        },
+       },
     },
 }
 
@@ -113,7 +149,7 @@ return {
     config = function()
         require("telescope").setup(opts)
         require("telescope").load_extension("fzf")
-        require("telescope").load_extension("file_browser")
+        require("telescope").load_extension "file_browser"
         require'telescope'.load_extension('project')
     end
 }

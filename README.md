@@ -34,3 +34,9 @@ qwq just the raw neovim, so everything is config from nothing AwA
 - [bufferline](https://github.com/akinsho/bufferline.nvim)
 - [telescope](https://github.com/nvim-telescope/telescope.nvim)
 - [dashboard](https://github.com/nvimdev/dashboard-nvim)
+- [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
+
+
+## References
+- https://youtu.be/-kCUks3xrCM?si=djZL-_eEbfa8UTlo
+- 

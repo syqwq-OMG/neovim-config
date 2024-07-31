@@ -43,6 +43,21 @@ require("lazy").setup({
 
     --- dashboard
     { import = "plugins.dashboard" },
+
+    --- nvim-treesitter
+    { import = "plugins.nvim-treesitter" },
+
+    --- mason
+    { import = "plugins.lsp.mason" },
+    
+    --- lspconfig
+    { import = "plugins.lsp.lspconfig" },
+    
+    --- autopairs
+    { import = "plugins.autopairs" },
+
+    --- auto complete
+    { import = "plugins.cmp" },
   },
 })
     

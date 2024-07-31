@@ -1,5 +1,6 @@
 local dashboard_custom_header={
     [[]],
+    [[]],
     [[    ⢰⣧⣼⣯⠄⣸⣠⣶⣶⣦⣾⠄⠄⠄⠄⡀⠄⢀⣿⣿⠄⠄⠄⢸⡇⠄⠄ ]],
     [[    ⣾⣿⠿⠿⠶⠿⢿⣿⣿⣿⣿⣦⣤⣄⢀⡅⢠⣾⣛⡉⠄⠄⠄⠸⢀⣿⠄ ]],
     [[   ⢀⡋⣡⣴⣶⣶⡀⠄⠄⠙⢿⣿⣿⣿⣿⣿⣴⣿⣿⣿⢃⣤⣄⣀⣥⣿⣿⠄ ]],
@@ -15,7 +16,8 @@ local dashboard_custom_header={
     [[     ⠈⠛⢿⣿⣿⣿⠁⠞⢿⣿⣿⡄⢿⣿⡇⣸⣿⣿⠿⠛⠁      ]],
     [[        ⠉⠻⣿⣿⣾⣦⡙⠻⣷⣾⣿⠃⠿⠋⠁     ⢀⣠⣴ ]],
     [[ ⣿⣿⣿⣶⣶⣮⣥⣒⠲⢮⣝⡿⣿⣿⡆⣿⡿⠃⠄⠄⠄⠄⠄⠄⠄⣠⣴⣿⣿⣿ ]],
-    [[]]
+    [[]],
+    [[]],
 }
 
 local opts = {
@@ -38,16 +40,16 @@ local opts = {
               desc = "Find file                           ",
               action = "Telescope find_files",
             },
-            {
-              icon = "  ",
-              desc = "Edit keybindings                    ",
-              action = "edit ~/.config/nvim/lua/configs/keybindings.lua",
-            },
             -- {
             --   icon = "  ",
-            --   desc = "Edit Projects                       ",
-            --   action = "edit ~/.local/share/nvim/project_nvim/project_history",
+            --   desc = "Edit keybindings                    ",
+            --   action = "edit ~/.config/nvim/lua/configs/keybindings.lua",
             -- },
+            {
+              icon = "  ",
+              desc = "Edit Projects                       ",
+              action = "edit ~/.local/share/nvim/telescope-projects.txt",
+            },
             -- {
             --   icon = "  ",
             --   desc = "Edit .bashrc                        ",

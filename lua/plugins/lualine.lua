@@ -1,48 +1,48 @@
 function generate_catppuccin_theme(flavour)
-	local C = require("catppuccin.palettes").get_palette(flavour)
-	local O = require("catppuccin").options
-	local catppuccin = {}
+    local C = require("catppuccin.palettes").get_palette(flavour)
+    local O = require("catppuccin").options
+    local catppuccin = {}
 
-	local transparent_bg = O.transparent_background and "NONE" or C.mantle
+    local transparent_bg = O.transparent_background  and "NONE" or C.mantle
 
-	catppuccin.normal = {
-		a = { bg = C.blue, fg = C.mantle, gui = "bold" },
-		b = { bg = C.surface0, fg = C.blue },
-		c = { bg = transparent_bg, fg = C.text },
-	}
+    catppuccin.normal = {
+        a = { bg = C.blue, fg = C.mantle, gui = "bold" },
+        b = { bg = C.surface0, fg = C.blue },
+        c = { bg = transparent_bg, fg = C.text },
+    }
 
-	catppuccin.insert = {
-		a = { bg = C.green, fg = C.base, gui = "bold" },
-		b = { bg = C.surface0, fg = C.green },
-	}
+    catppuccin.insert = {
+        a = { bg = C.green, fg = C.base, gui = "bold" },
+        b = { bg = C.surface0, fg = C.green },
+    }
 
-	catppuccin.terminal = {
-		a = { bg = C.green, fg = C.base, gui = "bold" },
-		b = { bg = C.surface0, fg = C.green },
-	}
+    catppuccin.terminal = {
+        a = { bg = C.green, fg = C.base, gui = "bold" },
+        b = { bg = C.surface0, fg = C.green },
+    }
 
-	catppuccin.command = {
-		a = { bg = C.peach, fg = C.base, gui = "bold" },
-		b = { bg = C.surface0, fg = C.peach },
-	}
+    catppuccin.command = {
+        a = { bg = C.peach, fg = C.base, gui = "bold" },
+        b = { bg = C.surface0, fg = C.peach },
+    }
 
-	catppuccin.visual = {
-		a = { bg = C.mauve, fg = C.base, gui = "bold" },
-		b = { bg = C.surface0, fg = C.mauve },
-	}
+    catppuccin.visual = {
+        a = { bg = C.mauve, fg = C.base, gui = "bold" },
+        b = { bg = C.surface0, fg = C.mauve },
+    }
 
-	catppuccin.replace = {
-		a = { bg = C.red, fg = C.base, gui = "bold" },
-		b = { bg = C.surface0, fg = C.red },
-	}
+    catppuccin.replace = {
+        a = { bg = C.red, fg = C.base, gui = "bold" },
+        b = { bg = C.surface0, fg = C.red },
+    }
 
-	catppuccin.inactive = {
-		a = { bg = transparent_bg, fg = C.blue },
-		b = { bg = transparent_bg, fg = C.surface1, gui = "bold" },
-		c = { bg = transparent_bg, fg = C.overlay0 },
-	}
+    catppuccin.inactive = {
+        a = { bg = transparent_bg, fg = C.blue },
+        b = { bg = transparent_bg, fg = C.surface1, gui = "bold" },
+        c = { bg = transparent_bg, fg = C.overlay0 },
+    }
 
-	return catppuccin
+    return catppuccin
 end
 
 local custom_catppuccin_mocha = generate_catppuccin_theme('mocha')
@@ -69,29 +69,29 @@ opts = {
     extensions = { "nvim-tree" },
     sections = {
         lualine_c = {
-        "filename",
-        {
-            "lsp_progress",
-            spinner_symbols = { " ", " ", " ", " ", " ", " " },
-        },
+            "filename",
+            {
+                "lsp_progress",
+                spinner_symbols = { " ", " ", " ", " ", " ", " " },
+            },
         },
         lualine_x = {
-        "filesize",
-        {
-            "fileformat",
-            symbols = {
-              unix = '', -- e712
-              dos = '', -- e70f
-              mac = '', -- e711
+            "filesize",
+            {
+                "fileformat",
+                symbols = {
+                    unix = '', -- e712
+                    dos = '', -- e70f
+                    mac = '', -- e711
+                },
+                -- symbols = {
+                --     unix = "LF",
+                --     dos = "CRLF",
+                --     mac = "CR",
+                -- },
             },
-            -- symbols = {
-            --     unix = "LF",
-            --     dos = "CRLF",
-            --     mac = "CR",
-            -- },
-        },
-        "encoding",
-        "filetype",
+            "encoding",
+            "filetype",
         },
     },
 }
