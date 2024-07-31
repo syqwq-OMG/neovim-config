@@ -1,13 +1,13 @@
 local telescope_keybindings = {
     i = {
         -- 上下移动
-        ["<C-j>"] = "move_selection_next",
-        ["<C-k>"] = "move_selection_previous",
-        ["<Down>"] = "move_selection_next",
-        ["<Up>"] = "move_selection_previous",
+        ["<C-j>"] = require("telescope.actions").move_selection_next,
+        ["<C-k>"] = require("telescope.actions").move_selection_previous,
+        ["<Down>"] = require("telescope.actions").move_selection_next,
+        ["<Up>"] = require("telescope.actions").move_selection_previous,
         -- 历史记录
-        ["<C-n>"] = "cycle_history_next",
-        ["<C-p>"] = "cycle_history_prev",
+        ["<C-n>"] = require("telescope.actions").cycle_history_next,
+        ["<C-p>"] = require("telescope.actions").cycle_history_prev,
         -- 关闭窗口
         ["<C-c>"] = "close",
         -- 预览窗口上下滚动
@@ -143,7 +143,8 @@ local opts = {
 return {
     'nvim-telescope/telescope.nvim',
     name = "telescope",
-    tag = '0.1.8',
+    -- tag = '0.1.x',
+    -- 出问题可能是telescope没更新
     dependencies = { 'nvim-lua/plenary.nvim' },
 
     config = function()

@@ -57,8 +57,10 @@ require("lazy").setup({
     { import = "plugins.autopairs" },
 
     --- auto complete
-    { import = "plugins.cmp" },
+    { import = "plugins.lsp.cmp" },
   },
+
+  checker = { enabled = true },
 })
     
   -- spec = {

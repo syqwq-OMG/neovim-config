@@ -13,11 +13,17 @@ nvim
     │   ├── * keybindings.lua
     │   └── lazy.lua
     └── plugins
+        ├── autopairs.lua
         ├── bufferline.lua
+        ├── cmp.lua
         ├── color-schemes.lua
         ├── dashboard.lua
+        ├── lsp
+        │   ├── lspconfig.lua
+        │   └── mason.lua
         ├── lualine.lua
         ├── * nvim-tree.lua
+        ├── nvim-treesitter.lua
         └── * telescope.lua
 ```
 
@@ -39,4 +45,8 @@ qwq just the raw neovim, so everything is config from nothing AwA
 
 ## References
 - https://youtu.be/-kCUks3xrCM?si=djZL-_eEbfa8UTlo
+- https://www.reddit.com/r/neovim/comments/1791a7x/all_of_a_sudden_i_cant_use_telescope/
+- https://blog.csdn.net/qq_35485875/article/details/120168944
+- https://github.com/williamboman/mason-lspconfig.nvim
+- https://github.com/NvChad/NvChad
 - 

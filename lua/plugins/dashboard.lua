@@ -18,6 +18,8 @@ local dashboard_custom_header={
     [[ ⣿⣿⣿⣶⣶⣮⣥⣒⠲⢮⣝⡿⣿⣿⡆⣿⡿⠃⠄⠄⠄⠄⠄⠄⠄⣠⣴⣿⣿⣿ ]],
     [[]],
     [[]],
+    [[]],
+    [[]],
 }
 
 local opts = {

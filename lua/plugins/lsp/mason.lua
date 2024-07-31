@@ -14,7 +14,7 @@ return {
                 "clangd",
                 "lua_ls",
                 "marksman",
-                "jsonls",
+                -- "jsonls",
                 "rust_analyzer",
                 "pyright",
                 -- 下载失败 参考 https://blog.csdn.net/qq_35485875/article/details/120168944
