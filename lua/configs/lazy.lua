@@ -58,6 +58,7 @@ require("lazy").setup({
 
     --- auto complete
     { import = "plugins.lsp.cmp" },
+    { "simrat39/rust-tools.nvim" },
   },
 
   checker = { enabled = true },
