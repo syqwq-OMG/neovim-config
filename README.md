@@ -60,4 +60,5 @@ qwq just the raw neovim, so everything is config from nothing AwA
 - https://github.com/williamboman/mason-lspconfig.nvim
 - https://github.com/NvChad/NvChad
 - https://github.com/nshen/InsisVim
+- https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
 - 

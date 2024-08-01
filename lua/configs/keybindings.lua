@@ -64,6 +64,9 @@ map("n", "<C-k>", "4k", opt)
 map("n", "<C-u>", "9k", opt)
 map("n", "<C-d>", "9j", opt)
 
+-- leader + h to hide search highlight
+map("n", "<leader>h", "<cmd>:noh<CR>", opt)
+
 --- ============================================
 -- 插件快捷键
 
@@ -89,3 +92,7 @@ map("n", "<leader>bc", ":BufferLinePickClose<CR>", opt)
 map("n", "<C-p>", ":Telescope find_files<CR>", opt)
 -- 全局搜索
 map("n", "<C-f>", ":Telescope live_grep<CR>", opt)
+-- vim.keymap.set("n", "<space>fb", ":Telescope file_browser<CR>")
+map("n", "<space>fb", ":Telescope file_browser<CR>", opt)
+map("n", "<space>p", ":Telescope project<CR>", opt)
+

@@ -1,6 +1,6 @@
 local M = {}
 
-function keymap(mode, lhs, rhs, opts)
+local function keymap(mode, lhs, rhs, opts)
     if not lhs or not rhs then
         return
     end
