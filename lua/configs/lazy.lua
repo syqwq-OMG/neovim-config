@@ -57,8 +57,17 @@ require("lazy").setup({
     { import = "plugins.autopairs" },
 
     --- auto complete
-    { import = "plugins.lsp.cmp" },
-    { "simrat39/rust-tools.nvim" },
+    { import = "plugins.cmp" },
+
+    { "simrat39/rust-tools.nvim",
+      dependencies = "neovim/nvim-lspconfig",
+    },
+
+    { import = "plugins.indent-blankline" },
+
+    { import = "plugins.which-key" },
+
+    { import = "plugins.toggle-term" },
   },
 
   checker = { enabled = true },

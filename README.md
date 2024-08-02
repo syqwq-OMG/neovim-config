@@ -33,6 +33,11 @@ nvim
         ├── nvim-treesitter.lua
         └── * telescope.lua
 ```
+### Keybinding related files
+- /lua/configs/keybindings.lua
+- /lua/plugins/lsp/common-config.lua
+- /lua/plugins/nvim-tree.lua
+- /lua/plugins/telescope.lua
 
 ## Nvim template
 qwq just the raw neovim, so everything is config from nothing AwA
@@ -52,6 +57,9 @@ qwq just the raw neovim, so everything is config from nothing AwA
 - [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig)
 - [nvim-autopairs](https://github.com/windwp/nvim-autopairs)
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
+- [lsp-kind](https://github.com/onsails/lspkind.nvim)
+- [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
+- [which-key.nvim](https://github.com/folke/which-key.nvim)
 
 ## References
 - https://youtu.be/-kCUks3xrCM?si=djZL-_eEbfa8UTlo
