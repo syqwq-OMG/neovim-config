@@ -15,29 +15,36 @@ nvim
     └── plugins
         ├── autopairs.lua
         ├── bufferline.lua
+        ├── cmp.lua
         ├── color-schemes.lua
         ├── dashboard.lua
+        ├── indent-blankline.lua
         ├── lsp
-        │   ├── cmp.lua
         │   ├── * common-config.lua
         │   ├── lspconfig.lua
         │   ├── mason.lua
-        │   └── spec-lsp
-        │       ├── cpp.lua
-        │       ├── lua.lua
-        │       ├── markdown.lua
-        │       ├── python.lua
-        │       └── rust.lua
+        │   ├── spec-lsp
+        │   │   ├── cpp.lua
+        │   │   ├── lua.lua
+        │   │   ├── markdown.lua
+        │   │   ├── python.lua
+        │   │   └── rust.lua
+        │   └── ui.lua
         ├── lualine.lua
         ├── * nvim-tree.lua
         ├── nvim-treesitter.lua
-        └── * telescope.lua
+        ├── * telescope.lua
+        ├── * toggle-term.lua
+        └── which-key.lua
+
+
 ```
 ### Keybinding related files
 - /lua/configs/keybindings.lua
 - /lua/plugins/lsp/common-config.lua
 - /lua/plugins/nvim-tree.lua
 - /lua/plugins/telescope.lua
+- /lua/plugins/toggle-term.lua
 
 ## Nvim template
 qwq just the raw neovim, so everything is config from nothing AwA
