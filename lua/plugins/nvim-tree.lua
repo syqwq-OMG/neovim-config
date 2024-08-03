@@ -31,7 +31,7 @@ end
 local options = {
     disable_netrw = true,
     hijack_netrw = true,
-    hijack_cursor = true,
+    hijack_cursor = false,
     hijack_unnamed_buffer_when_opening = false,
     sync_root_with_cwd = true,
 
@@ -119,9 +119,9 @@ local options = {
     },
     -- wsl install -g wsl-open
     -- https://github.com/4U6U57/wsl-open/
-    system_open = {
-        cmd = 'open', -- mac 直接设置为 open
-    },
+    -- system_open = {
+    --     cmd = 'open', -- mac 直接设置为 open
+    -- },
   }
 
 return {
@@ -136,8 +136,8 @@ return {
       require("nvim-tree").setup(options)
 
       -- 自动关闭
-      vim.cmd([[
-        autocmd BufEnter * ++nested if winnr('$') == 1 && bufname() == 'NvimTree_' . tabpagenr() | quit | endif
-        ]])
+    --   vim.cmd([[
+    --     autocmd BufEnter * ++nested if winnr('$') == 1 && bufname() == 'NvimTree_' . tabpagenr() | quit | endif
+    --     ]])
     end,
 }
