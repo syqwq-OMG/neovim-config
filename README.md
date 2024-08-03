@@ -1,7 +1,9 @@
 # syqwq-OMG Neovim Rice up
 
 ## Config structure
+
 [files with `*` are files with keybindings set-up]
+
 ```
 nvim
 ├── README.md
@@ -17,6 +19,7 @@ nvim
         ├── bufferline.lua
         ├── cmp.lua
         ├── color-schemes.lua
+        ├── * conform.lua
         ├── dashboard.lua
         ├── indent-blankline.lua
         ├── lsp
@@ -39,20 +42,26 @@ nvim
 
 
 ```
+
 ### Keybinding related files
+
 - /lua/configs/keybindings.lua
 - /lua/plugins/lsp/common-config.lua
 - /lua/plugins/nvim-tree.lua
 - /lua/plugins/telescope.lua
 - /lua/plugins/toggle-term.lua
+- /lua/plugins/conform.lua
 
 ## Nvim template
+
 qwq just the raw neovim, so everything is config from nothing AwA
 
 ## Package manager used
+
 [lazy.vim](https://github.com/folke/lazy.nvim)
 
 ## Plugins installed
+
 - [catppuccin.nvim](https://github.com/catppuccin/nvim)
 - [lualine](https://github.com/catppuccin/nvim)
 - [nvim-tree](https://github.com/nvim-tree/nvim-tree.lua)
@@ -67,8 +76,11 @@ qwq just the raw neovim, so everything is config from nothing AwA
 - [lsp-kind](https://github.com/onsails/lspkind.nvim)
 - [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
 - [which-key.nvim](https://github.com/folke/which-key.nvim)
+- [toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim)
+- [conform.nvim](https://github.com/stevearc/conform.nvim)
 
 ## References
+
 - https://youtu.be/-kCUks3xrCM?si=djZL-_eEbfa8UTlo
 - https://www.reddit.com/r/neovim/comments/1791a7x/all_of_a_sudden_i_cant_use_telescope/
 - https://blog.csdn.net/qq_35485875/article/details/120168944
@@ -76,4 +88,4 @@ qwq just the raw neovim, so everything is config from nothing AwA
 - https://github.com/NvChad/NvChad
 - https://github.com/nshen/InsisVim
 - https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
-- 
+- https://github.com/slydragonn/nvim-lazy

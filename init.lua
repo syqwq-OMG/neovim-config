@@ -1,5 +1,5 @@
 -- basic config of VIM
-require('configs.basic')
+require("configs.basic")
 
 -- keybindings
 require("configs.keybindings")
