@@ -7,10 +7,15 @@ return {
 		conform.setup({
 			formatters = {
 				clang_format = {
-				  command = 'clang-format',
-				  args = { '--style={BasedOnStyle: LLVM, IndentWidth: 4}' },
-				  stdin = true,
+					command = 'clang-format',
+					args = { '--style={BasedOnStyle: LLVM, IndentWidth: 4}' },
+					stdin = true,
 				},
+				stylua = {
+					command = 'stylua',
+					args = { '--indent-type', 'Spaces', '--indent-width', '4', '-' },
+					stdin = true,
+				}
 			},
 			formatters_by_ft = {
 				javascript = { "prettier" },
