@@ -5,7 +5,7 @@ vim.g.maplocalleader = " "
 
 local map = vim.api.nvim_set_keymap
 -- 复用 opt 参数
-local opt = {noremap = true, silent = true }
+local opt = { noremap = true, silent = true }
 
 -- 取消 s 默认功能
 map("n", "s", "", opt)
@@ -74,7 +74,6 @@ map("n", "<leader>h", "<cmd>:noh<CR>", opt)
 -- leader + e 键打开关闭tree
 map("n", "<leader>e", ":NvimTreeToggle<CR>", opt)
 
-
 -- bufferline
 -- 左右Tab切换
 map("n", "<C-h>", ":BufferLineCyclePrev<CR>", opt)
@@ -86,7 +85,6 @@ map("n", "<leader>bl", ":BufferLineCloseRight<CR>", opt)
 map("n", "<leader>bh", ":BufferLineCloseLeft<CR>", opt)
 map("n", "<leader>bc", ":BufferLinePickClose<CR>", opt)
 
-
 -- Telescope
 -- 查找文件
 map("n", "<C-p>", ":Telescope find_files<CR>", opt)
@@ -96,3 +94,8 @@ map("n", "<C-f>", ":Telescope live_grep<CR>", opt)
 map("n", "<space>fb", ":Telescope file_browser<CR>", opt)
 map("n", "<space>p", ":Telescope project<CR>", opt)
 
+-- Lazy
+map("n", "<leader>l", ":Lazy<CR>", opt)
+
+-- Mason
+map("n", "<leader>m", ":Mason<CR>", opt)
