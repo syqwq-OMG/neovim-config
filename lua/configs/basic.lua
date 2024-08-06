@@ -119,4 +119,6 @@ vim.o.showmode = false
 -- vim.g.loaded_netrw = 1
 -- vim.g.loaded_netrwPlugin = 1
 
+vim.g.python3_host_prog = '/path/to/conda/environment/bin/python'
+
 require("plugins.lsp.ui")

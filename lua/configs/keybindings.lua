@@ -43,6 +43,7 @@ map("n", "s=", "<C-w>=", opt)
 
 -- Terminal相关
 -- map("n", "<leader>t", ":sp | terminal<CR> i", opt)
+map("n", "<leader>ht", ":sp | terminal<CR> i", opt)
 map("n", "<leader>vt", ":vsp | terminal<CR>", opt)
 map("t", "<Esc>", "<C-\\><C-n>", opt)
 map("t", "<A-h>", [[ <C-\><C-N><C-w>h ]], opt)
