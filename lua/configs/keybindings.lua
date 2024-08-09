@@ -97,6 +97,7 @@ map("n", "<space>p", ":Telescope project<CR>", opt)
 
 -- Lazy
 map("n", "<leader>l", ":Lazy<CR>", opt)
+map("n", "<leader>L", ":Lazy update<CR>", opt)
 
 -- Mason
 map("n", "<leader>m", ":Mason<CR>", opt)

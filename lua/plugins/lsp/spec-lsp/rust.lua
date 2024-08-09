@@ -1,6 +1,7 @@
 local common = require("plugins.lsp.common-config")
 local opts = {
-    capabilities = common.capabilities,
+    -- capabilities = common.capabilities,
+    capabilities = require("cmp_nvim_lsp").default_capabilities(),
     flags = common.flags,
     on_attach = function(client, bufnr)
         common.disableFormat(client)
@@ -10,7 +11,7 @@ local opts = {
         -- to enable rust-analyzer settings visit:
         -- https://github.com/rust-analyzer/rust-analyzer/blob/master/docs/user/generated_config.adoc
         ["rust-analyzer"] = {
-            -- cargo = { allFeatures = true },
+            cargo = { allFeatures = true },
             -- enable clippy on save
             checkOnSave = {
                 command = "clippy",
