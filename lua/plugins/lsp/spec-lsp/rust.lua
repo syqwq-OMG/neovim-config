@@ -1,4 +1,5 @@
 local common = require("plugins.lsp.common-config")
+-- common.capabilities.offsetEncoding = "utf-16"
 local opts = {
     -- capabilities = common.capabilities,
     capabilities = require("cmp_nvim_lsp").default_capabilities(),
