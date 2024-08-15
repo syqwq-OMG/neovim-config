@@ -36,10 +36,10 @@ return {
         --     -- })
         --     rust_tools.setup({server = opts})
         -- end
-        -- server.setup(opts)
-        require("rust-tools").setup({
-            server = opts,
-            -- dap = require("insis.dap.nvim-dap.config.rust")
-        })
+        server.setup(opts)
+        -- require("rust-tools").setup({
+        -- server = opts,
+        -- dap = require("insis.dap.nvim-dap.config.rust")
+        -- })
     end,
 }
