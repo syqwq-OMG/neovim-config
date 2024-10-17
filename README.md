@@ -90,3 +90,9 @@ qwq just the raw neovim, so everything is config from nothing AwA
 - https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
 - https://github.com/slydragonn/nvim-lazy
 - https://hassanaskary.medium.com/how-to-setup-neovim-with-python-provider-using-conda-cbb0172f162
+
+## Pre-requisite
+
+- unzip
+- git
+- npm

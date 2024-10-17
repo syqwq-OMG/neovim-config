@@ -67,7 +67,6 @@ map("n", "<C-d>", "9j", opt)
 
 -- leader + h to hide search highlight
 map("n", "<leader>h", "<cmd>:noh<CR>", opt)
-
 --- ============================================
 -- 插件快捷键
 
